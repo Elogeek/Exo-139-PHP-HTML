@@ -7,8 +7,8 @@
        <select  id="day">
            <?php
            // TODO list of day
-           for($i=0; $i < 31; $i++){
-               echo "<option value='$i'>$i</option>";
+           for($i = 1; $i < 31; $i++){
+               echo "<option value='$i'>" . str_pad($i, 2, "0", STR_PAD_LEFT) . "</option>";
            }
            ?>
        </select>
@@ -17,8 +17,8 @@
        <select  id="month">
            <?php
            // TODO list of month
-           for($i=0; $i < 13; $i++){
-               echo "<option value='$i'>$i</option>";
+           for($i= 1; $i < 13; $i++){
+               echo "<option value='$i'>". str_pad($i, 2, "0", STR_PAD_LEFT) ."</option>";
            }
 
            ?>
@@ -28,12 +28,11 @@
        <select  id="year">
            <?php
            // TODO list of year 2018, 2019, 2020 --> Bonus : faites le avec une vraie date en PHP, renseignez vous sur la doc
-           for($i=0; $i < 13; $i++){
+           for($i = 2018; $i < 2021; $i++){
                echo "<option value='$i'>$i</option>";
            }
            ?>
 
-           ?>
        </select>
      </form>
   </body>
