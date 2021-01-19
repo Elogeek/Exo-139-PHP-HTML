@@ -18,7 +18,7 @@
            <?php
            // TODO list of month
            for($i=0; $i < 13; $i++){
-               echo "<option value= '$i'>$i</option>";
+               echo "<option value='$i'>$i</option>";
            }
 
            ?>
